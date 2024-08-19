@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+
+#icon{
+    height: 20px;
+}
+
+#profile{
+    height: 40px;
+    border-radius: 50%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 4fr;   
+    height: 100vh;
+}
+
+.sidebar{
+    background-color: rgb(51, 164, 209);
+    grid-row: 1 / 6;
+    padding: 8%;
+    display: grid;
+    grid-template-rows: 1.5fr 2fr 4fr;
+}
+
+.sidebar img{
+    filter:  brightness(0) invert(1);
+}
+
+.dash-title{
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr ;
+    align-items: center;
+}
+
+
+.header{
+    padding: 1% 5% 1%;
+    background-color: antiquewhite;
+    grid-column: 2 / 3;
+}
+
+.top{
+    display: flex;
+    grid-column:  1 / 2;
+    justify-content: space-between;
+}
+.top-right{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.bottom-left{
+    display: flex;
+    gap: 1.5rem;
+}
+.buttons{
+    display: flex;
+    gap: 1.5rem;
+}
+.buttons button {
+    padding: .3rem;
+    width: 90px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(40, 140, 222);
+    color: white;
+}
+
+.content{
+    background-color: aliceblue;
+    grid-column: 2 / 3;
+    grid-row: 2 / 6;
+}
